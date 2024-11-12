@@ -21,7 +21,7 @@ interface IMovie {
 }
 
 // api. movie 정보 호출
-async function getMovie(id: string) {
+export async function getMovie(id: string) {
   const response = await fetch(`${API_URL}/${id}`);
   const json = await response.json();
   return json;
