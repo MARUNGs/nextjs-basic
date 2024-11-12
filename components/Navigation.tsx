@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import styles from "../styles/navigation.module.css";
 
 export default function Navigation() {
   const path = usePathname(); // use client 오류!
@@ -13,7 +14,7 @@ export default function Navigation() {
   return (
     <>
       <div>
-        <nav>
+        <nav className={styles.nav}>
           <ul>
             <li>
               <Link href={"/"}>Home {path === "/" && "✅"}</Link>
@@ -22,9 +23,6 @@ export default function Navigation() {
               <Link href={"/about-us"}>
                 About Us {path === "/about-us" && "✅"}
               </Link>
-            </li>
-            <li>
-              <button onClick={() => setCount((c) => ++c)}>{count}</button>
             </li>
           </ul>
         </nav>
