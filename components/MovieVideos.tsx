@@ -1,5 +1,5 @@
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-video.module.css";
+import { API_URL } from "./url";
 
 interface IVideo {
   iso_639_1: string;

@@ -1,11 +1,10 @@
 import Movie from "../../components/Movie";
+import { API_URL } from "../../components/url";
 import styles from "../../styles/home.module.css";
 
 export const metadata = {
   title: "Home",
 };
-
-export const API_URL = `https://nomad-movies.nomadcoders.workers.dev/movies`;
 
 // 더이상 loading을 위한 useState, API를 호출하기 위한 useEffect가 필요없다.
 // 그저 async - await 선언만 해주면 됨.

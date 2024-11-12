@@ -1,5 +1,5 @@
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-credit.module.css";
+import { API_URL } from "./url";
 
 interface ICredit {
   profile_path: string;

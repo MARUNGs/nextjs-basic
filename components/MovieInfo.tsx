@@ -1,7 +1,7 @@
 import { Suspense } from "react";
-import { API_URL } from "../app/(home)/page";
 import styles from "../styles/movie-info.module.css";
 import MovieCredit from "./MovieCredit";
+import { API_URL } from "./url";
 
 interface IMovie {
   adult: boolean;
